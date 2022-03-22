@@ -1,0 +1,25 @@
+# manipulação de dados em arquivos
+
+import os
+
+# abrindo e fechando um arquivo
+arquivo = open("teste.txt")
+print ("Arquivo aberto com sucesso!")
+
+
+print (os.path.relpath(arquivo.name))
+print (os.path.abspath(arquivo.name))
+print (arquivo)
+
+arquivo.close()
+print ("arquivo fechado?: " , arquivo.closed)
+print ("====================================")
+
+# usando o with para abrir um arquivo
+
+with open("dados.txt") as arquivo1:
+   print ("Arquivo aberto com sucesso!")
+
+print (os.path.relpath(arquivo.name))
+print (os.path.abspath(arquivo.name))
+print (arquivo)
